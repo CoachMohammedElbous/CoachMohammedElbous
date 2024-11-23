@@ -124,7 +124,7 @@ a:active{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://raw.githubusercontent.com/CoachMohammedElbous/CoachMohammedElbous2/refs/heads/main/images/panoramic-view-abstract-fog-white-600nw-2043241487.webp)no-repeat;
+    background: url(https://raw.githubusercontent.com/Esamkheder/Coach.Mohammed-EL-Bous/refs/heads/main/images/panoramic-view-abstract-fog-white-600nw-2043241487.webp)no-repeat;
     background-size:cover;;
     background-position: center;
     background-attachment: fixed;
@@ -198,23 +198,23 @@ span{
     margin-bottom: 30px;
 
  }
-.about-content{
+ .about{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-}
-.about-content h2 ,.about-content p {
+ }
+
+.about-content h2  {
     font-size: 3rem;
     font-weight: 600;
     float: right;
 }
 .about-content p {
+    font-size: 3rem;
+    font-weight: 600;
     text-align: left;
 }
 .about-content a {
-    display: grid;
-    place-items: center;
+    margin-left: 55rem;
     margin-top: 20px;
 }
 
@@ -444,7 +444,7 @@ span{
 .footer-logo{
     font-size:2rem ;
     color: var(--text-colr);
-    }
+    } 
 
 /* Responsive adjustments */
 @media (max-width: 991px) {
@@ -530,6 +530,10 @@ span{
     }
     .about-content p {
         font-size: 2rem;
+    }
+    .about-content a {
+        margin-left: 0;
+        margin-top: 20px;
     }
     .tabs {
         flex-wrap: nowrap;
