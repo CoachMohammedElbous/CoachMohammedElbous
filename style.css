@@ -523,8 +523,10 @@ span{
     }
     .home-img img {
         flex-direction: column;
+        margin-top: 10px;
         width: 60vw;
         height: auto;
+        border-radius: 10px 40px;
     }
     .about {
         flex-direction: column;
@@ -607,4 +609,3 @@ span{
     color: var(--text-colr);
     }
 }
-
