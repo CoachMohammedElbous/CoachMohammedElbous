@@ -605,6 +605,10 @@ span{
     .image-slider img {
         width: 250px; /* تصغير الصور للموبايل */
     }
+    .slider-container h1{
+        margin-top: 10px;
+        font-size: 20px;
+    }
     .footer-logo{
     font-size:1.6rem ;
     color: var(--text-colr);
