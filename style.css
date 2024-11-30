@@ -166,6 +166,7 @@ span{
 .home-img img{
     width: 40vw;
     height: 45vw;
+    border-radius: 10px 40px;
 }
 
 .btn{
