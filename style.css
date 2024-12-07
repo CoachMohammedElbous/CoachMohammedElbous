@@ -200,7 +200,7 @@ span{
     margin-bottom: 30px;
 
  }
- .about{
+.about{
     display: flex;
     flex-direction: column;
  }
@@ -223,6 +223,7 @@ span{
 .cert{
     background-color: #171616;
 }
+
 .swiper-pagination-bullet{
     color: var(--main-color);
     background: var(--main-color);
@@ -238,10 +239,10 @@ span{
     list-style: none;
 }
 .card-list .card-item .card-link{
-    width: 400px;
+    width: 90%;
     display: block;
     background: var(--bg-color);
-    padding: 18px;
+    padding: 10px;
     border-radius: 12px;
     border: 2px solid transparent;
     text-decoration: none;
@@ -252,9 +253,12 @@ span{
 }
 
 .card-list .card-link .card-image{
-    width: 100%;
+    
     object-fit: cover;
     border-radius: 10px;
+}
+.card-list .card-item .card-link img{
+    width: 100%;
 }
 
 .tab-container {
@@ -333,7 +337,7 @@ span{
     text-decoration: line-through;
     color: var(--text-colr);
 }
-/* عرض البلاك فريادي*/
+
 .plan p span{
     text-decoration: line-through;
     color: var(--text-colr);
@@ -473,7 +477,7 @@ span{
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    max-width: 800px;
+    
     margin: 0 auto;
     box-shadow: 0 0 10px var(--main-color);
 }
@@ -632,13 +636,19 @@ label{
         flex: 0 1 auto; /* Ensure tabs take up the full width on mobile */
         margin-bottom: 5px;
     }
+    .swiper{
+       width: auto;
+    }
     .card-list .card-item .card-link{
-        width: 350px;
-        padding: 20px;
+        padding: 10px;
         justify-content: center;
+        
+    }
+    .card-list .card-item .card-link img{
+        width: 100%;
     }
     .card-list .card-link .card-image {
-        width: 95%;
+        width: 80%;
     }
     .plans {
         flex-direction: column;
@@ -655,7 +665,7 @@ label{
         font-size: 30px;
     }
     .image-slider {
-        gap: 10px; /* قلل المسافة بين الصور */
+        gap: 10px; 
         display: flex;
         list-style: none;
         animation: infiniteslider 10s infinite linear alternate  ;
@@ -669,7 +679,7 @@ label{
         }
       }
     .image-slider img {
-        width: 250px; /* تصغير الصور للموبايل */
+        width: 250px; 
     }
     .slider-container h1{
         margin-top: 10px;
