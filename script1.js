@@ -219,10 +219,10 @@ const foodToCalories = {
       let resultElement = document.querySelector('#result');
       if (alternativeFood === "whole-eggs" || alternativeFood === "egg-whites") {
           alternativeFoodAmount = ((selectedFoodCalories * foodToCalories[alternativeFood]) / 100) / foodToCalories[alternativeFood];
-          resultElement.textContent = `You should eat approximately ${alternativeFoodAmount.toFixed(2)} servings of ${alternativeFood} to get the same caloric value of ${selectedFood}.`;
+          resultElement.textContent = `You should eat approximately ${alternativeFoodAmount.toFixed(2)} servings of ${alternativeFood} to get the same Calories value of ${selectedFood}.`;
       } else {
           alternativeFoodAmount = (selectedFoodCalories * foodToCalories[alternativeFood]) / 100;
-          resultElement.textContent = `You should eat ${alternativeFoodAmount.toFixed(2)} grams of ${alternativeFood} to get the same caloric value of ${selectedFood}.`;
+          resultElement.textContent = `You should eat ${alternativeFoodAmount.toFixed(2)} grams of ${alternativeFood} to get the same Calories value of ${selectedFood}.`;
       }
   });
   
