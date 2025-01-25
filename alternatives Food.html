@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>alternatives calculator</title>
+    </head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <!-- Menu icon -->
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <a href="#home" class="logo"> Coach.<span>Mohammed EL-Bous</span></a>
+            <ul>
+                <li><a class="active" href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#cert">Certification</a></li>
+                <li><a href="index.html#plans">Plans</a></li>
+                <li><a href="index.html#Review">Review</a></li>
+                <li><a href="index.html#payments">Payments</a></li>
+                <li><a href="index.html#food">alternatives Food</a></li>
+                <li><a href="index.html#calc">Calorie Calculator</a></li>
+                <li><a href="index.html#lang">العربية</a></li>
+    
+            </ul>
+         </nav>
+        
+
+    </header>
+    <section class="Alternatives_Calculator">
+        <h1 class="heading">Alternatives Calculator</h1>
+        <div class="container">
+            <div class="buttons">
+                <div class="tabs" onclick="showContent('content1')">Dairy Products</div>
+                <div class="tabs" onclick="showContent('content2')">Carbs</div>
+                <div class="tabs" onclick="showContent('content3')">Legumes</div>
+                <div class="tabs" onclick="showContent('content4')">Fruits </div>
+                <div class="tabs" onclick="showContent('content5')">Vegetables </div>
+                <div class="tabs" onclick="showContent('content6')">Protein </div>
+                <div class="tabs" onclick="showContent('content7')">Healthy Fat </div>
+            </div>
+            <div id="content1" class="food_content active" >
+                    <label for="select-food">Select Food</label>
+                    <select id="dairy-options" name="dairy-options">
+                        <option value="whole-milk">Whole Milk - حليب كامل الدسم</option>
+                        <option value="skim-milk">Skim Milk (Non-fat) - حليب منزوع الدسم</option>
+                        <option value="almond-milk">Almond Milk (Unsweetened) - حليب اللوز (غير المحلى)</option>
+                        <option value="soy-milk">Soy Milk (Unsweetened) - حليب الصويا (غير المحلى)</option>
+                        <option value="oat-milk">Oat Milk (Unsweetened) - حليب الشوفان (غير المحلى)</option>
+                        <option value="rice-milk">Rice Milk (Unsweetened) - حليب الأرز (غير المحلى)</option>
+                        <option value="coconut-milk">Coconut Milk (Unsweetened, from carton) - حليب جوز الهند (من الكرتون)</option>
+                        <option value="goat-milk">Goat Milk - حليب الماعز</option>
+                        <option value="buffalo-milk">Buffalo Milk - حليب الجاموس</option>
+                        <option value="lactose-free-milk">Lactose-Free Milk - حليب خالٍ من اللاكتوز</option>
+                        <option value="greek-yoghurt">Greek Yoghurt - زبادي يوناني</option>
+                        <option value="roumi-cheese">Roumi Cheese - جبن رومي</option>
+                        <option value="cottage-cheese">Cottage Cheese - جبن قريش</option>
+                        <option value="cheddar-light">Cheddar Light - جبن شيدر خفيف</option>
+                    </select>
+            </div>
+            <div id="content2" class="food_content">
+                <label for="select-food">Select Food</label>
+                <select id="Carbs" name="Carbs">
+                    <label for="select-food">Select Food</label>
+                    <option value="oats">Oats - الشوفان</option>
+                    <option value="white-rice">White Rice (Cooked) - الأرز الأبيض (مطهي)</option>
+                    <option value="pasta">Pasta (Cooked) - المكرونة (مطهية)</option>
+                    <option value="quinoa">Quinoa (Cooked) - الكينوا (مطهية)</option>
+                    <option value="sweet-potatoes-cocked">Sweet Potatoes (Cooked) - البطاطا الحلوة (مطهية)</option>
+                    <option value="potatoes-boiled">Potatoes (Boiled) - البطاطس (مسلوقة)</option>
+                    <option value="popcorn">Popcorn - الفشار</option>
+                    <option value="corn-flakes">Corn Flakes - رقائق الذرة (كورنفليكس)</option>
+                    <option value="taro">Taro (Cooked) - القلقاس (مطهي)</option>
+                    <option value="grilled-corn">Grilled Corn - الذرة المشوية</option>
+                    <option value="brown-toast">Brown Toast - خبز التوست البني</option>
+                    <option value="white-toast">White Toast - خبز التوست الأبيض</option>
+                    <option value="tortilla-bread">Tortilla Bread - خبز التورتيلا</option>
+                    <option value="baladi-bread">Baladi Bread - الخبز البلدي</option>
+                    <option value="shami-bread">Shami Bread - الخبز الشامي</option>
+                    <option value="rice-cake">Rice Cake - رقائق الأرز</option>
+                    <option value="honey">Honey - العسل</option>
+                </select>
+            </div>
+            <div id="content3" class="food_content">
+                <label for="select-food">Select Food</label>
+                <select id="legumes-options" name="legumes-options">
+                    <option value="lentils">Lentils (Cooked) - العدس (مطبوخ)</option>
+                    <option value="chickpeas">Chickpeas (Cooked) - الحمص (مطبوخ)</option>
+                    <option value="kidney-beans">Kidney Beans (Cooked) - الفاصولياء الحمراء (مطبوخة)</option>
+                    <option value="lima-beans">Lima Beans (Cooked) - الفاصولياء البيضاء (مطبوخة)</option>
+                    <option value="soybeans">Soybeans (Cooked) - فول الصويا (مطبوخ)</option>
+                    <option value="peas">Peas (Cooked) - البازلاء (مطبوخة)</option>
+                    <option value="brown-beans">Brown Beans (Cooked) - الفول (مطبوخ)</option>
+                    <option value="lupine-beans">Lupine Beans (Cooked) - الترمس (مطبوخ)</option>
+                </select>
+            </div>
+            <div id="content4" class="food_content">
+                <label for="select-food">Select Food</label>
+                <select id="fruits" name="fruits">
+                    <option value="apple">Apple - تفاح</option>
+                    <option value="orange">Orange - برتقال</option>
+                    <option value="banana">Banana - موز</option>
+                    <option value="grapes">Grapes - عنب</option>
+                    <option value="strawberries">Strawberries - فراولة</option>
+                    <option value="blueberries">Blueberries - توت أزرق</option>
+                    <option value="pineapple">Pineapple - أناناس</option>
+                    <option value="mango">Mango - مانجو</option>
+                    <option value="peach">Peach - خوخ</option>
+                    <option value="pear">Pear - كمثرى</option>
+                    <option value="watermelon">Watermelon - بطيخ</option>
+                    <option value="kiwi">Kiwi - كيوي</option>
+                    <option value="cherries">Cherries - كرز</option>
+                    <option value="avocado">Avocado - أفوكادو</option>
+                    <option value="pomegranate">Pomegranate - رمان</option>
+                    <option value="raspberry">Raspberry - توت العليق</option>
+                    <option value="blackberries">Blackberries - توت أسود</option>
+                    <option value="cantaloupe">Cantaloupe (Melon) - شمام</option>
+                    <option value="fig">Fig - تين</option>
+                    <option value="dates">Dates - تمر</option>
+                </select>
+            </div>
+            <div id="content5" class="food_content">
+                <label for="select-food">Select Food</label>
+                <select id="vegetables" name="vegetables">
+                    <option value="carrot">Carrot - جزر</option>
+                    <option value="broccoli">Broccoli - بروكلي</option>
+                    <option value="spinach">Spinach - سبانخ</option>
+                    <option value="bell-peppers">Bell Peppers - فلفل رومي</option>
+                    <option value="tomatoes">Tomatoes - طماطم</option>
+                    <option value="cucumbers">Cucumbers - خيار</option>
+                    <option value="green-beans">Green Beans - فاصوليا خضراء</option>
+                    <option value="potatoes">Potatoes - بطاطس</option>
+                    <option value="sweet-potatoes">Sweet Potatoes - بطاطا حلوة</option>
+                    <option value="onions">Onions - بصل</option>
+                    <option value="mushrooms">Mushrooms - فطر</option>
+                    <option value="eggplant">Eggplant - باذنجان</option>
+                    <option value="pumpkin">Pumpkin - قرع</option>
+                    <option value="celery">Celery - كرفس</option>
+                </select>
+            </div>
+            <div id="content6" class="food_content">
+                <label for="select-food">Select Food</label>
+                <select id="proteins" name="proteins">
+                    <option value="chicken-breast">Chicken Breast (Cooked) - صدور دجاج (مطهي)</option>
+                    <option value="chicken-thigh">Chicken Thigh (Cooked) - أوراك دجاج (مطهي)</option>
+                    <option value="chicken-wing">Chicken Wing (Cooked) - أجنحة دجاج (مطهي)</option>
+                    <option value="chicken-liver">Chicken Liver (Cooked) - كبد دجاج (مطهي)</option>
+                    <option value="turkey-breast">Turkey Breast (Cooked) - صدور ديك رومي (مطهي)</option>
+                    <option value="whole-eggs">Whole Eggs - البيض الكامل</option>
+                    <option value="egg-whites">Egg Whites - بياض البيض</option>
+                    <option value="ground-beef">Ground Beef (Cooked) - لحم مفروم (مطهي)</option>
+                    <option value="shrimp">Shrimp (Cooked) - جمبري (مطهي)</option>
+                    <option value="salmon">Salmon (Cooked) - سلمون (مطهي)</option>
+                    <option value="tuna">Tuna (Cooked) - تونة (مطهية)</option>
+                    <option value="mackerel">Mackerel (Cooked) - ماكريل (مطهي)</option>
+                    <option value="sardines">Sardines (Cooked) - سردين (مطهي)</option>
+                    <option value="tilapia">Tilapia (Cooked) - سمك بلطي (مطهي)</option>
+                    <option value="crab">Crab (Cooked) - سلطعون (مطهي)</option>
+                    <option value="beef-liver">Beef Liver (Cooked) - كبد بقري (مطهي)</option>
+                    <option value="cottage-cheese-proteins">Cottage Cheese - جبن قريش</option>
+                    <option value="rabbit-meat">Rabbit Meat (Cooked) - لحم أرنب (مطهي)</option>
+                    <option value="mullet-fish">Mullet Fish (Cooked) - سمك بوري (مطهي)</option>
+                </select>
+            </div>
+            <div id="content7" class="food_content">
+                <label for="select-food">Select Food</label>
+                <select id="fats" name="fats">
+                    <option value="olive-oil">Olive Oil - زيت الزيتون</option>
+                    <option value="avocado">Avocado - الأفوكادو</option>
+                    <option value="almonds">Almonds - اللوز</option>
+                    <option value="hazelnuts">Hazelnuts - البندق</option>
+                    <option value="cashews">Cashews - الكاجو</option>
+                    <option value="pistachios">Pistachios - الفستق</option>
+                    <option value="peanuts">Peanuts - الفول السوداني</option>
+                    <option value="chia-seeds">Chia Seeds - بذور الشيا</option>
+                    <option value="peanut-butter">Peanut Butter - زبدة الفول السوداني</option>
+                    <option value="almond-butter">Almond Butter - زبدة اللوز</option>
+                    <option value="pecans">Pecans - الجوز (بيكان)</option>
+                </select>
+            </div>
+            <label for="amount">Amount (grams)</label>
+            <input type="number" id="amount" placeholder="Enter amount in grams">
+            <label for="select-alternative-food">Select Alternative Food</label>
+            <select id="select-alternative-food" name="select-alternative-food">
+            </select>
+            <button id="calculate" class="btn">Calculate</button>
+            <div class="box">
+                <br>
+                <p id="result"></p>
+                <br>
+            </div>
+            
+        </div>
+        
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script1.js"> </script>
+</body>
+</html>
+
